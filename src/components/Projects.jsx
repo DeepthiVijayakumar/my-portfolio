@@ -7,16 +7,16 @@ const Projects = () => {
     // I will add placeholders for now.
     const projects = [
         {
-            title: "Project Alpha",
-            role: "Automation Lead",
-            desc: "Designed the end-to-end automation framework for a large-scale e-commerce platform.",
-            tech: ["Selenium", "Java", "TestNG", "Jenkins"]
+            title: "Service Now Enterprise Asset Management",
+            role: "Quality Engineering Senior Analyst",
+            desc: "Designed and executed E2E automation scenarios for ServiceNow applications, covering frontend and backend workflows to ensure system reliability.",
+            tech: ["Selenium", "Java", "ServiceNow", "Azure DevOps"]
         },
         {
-            title: "Project Beta",
-            role: "SDET",
-            desc: "Implemented clean architecture for API testing and reduced regression time by 40%.",
-            tech: ["RestAssured", "Cucumber", "Azure DevOps"]
+            title: "My Competency",
+            role: "Quality Engineering Senior Analyst",
+            desc: "Developed and maintained robust automation frameworks using Selenium & TestNG, significantly reducing manual regression effort and ensuring WCAG compliance.",
+            tech: ["Selenium", "TestNG", "Maven", "WCAG 2.0"]
         }
     ];
 

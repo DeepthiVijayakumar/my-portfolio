@@ -8,12 +8,16 @@ import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Cursor from './components/Cursor'; // Added
+import Cursor from './components/Cursor';
+import ParticleBackground from './components/ParticleBackground';
+import ScrollToTop from './components/ScrollToTop'; // Added
 
 function App() {
   return (
     <div className="app">
-      <Cursor /> {/* Added */}
+      <ScrollToTop /> {/* Added navigation helper */}
+      <ParticleBackground /> {/* Added subtle alive background */}
+      <Cursor />
       <Navbar />
       <Hero />
       <About />
