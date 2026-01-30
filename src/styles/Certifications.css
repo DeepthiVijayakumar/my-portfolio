@@ -1,0 +1,82 @@
+.bg-tertiary {
+    background-color: var(--bg-primary);
+    /* Keeping it dark/main background for contrast */
+    position: relative;
+}
+
+.bg-tertiary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.cert-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 2.5rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.cert-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: var(--accent-primary);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.cert-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.cert-card:hover .cert-icon {
+    color: var(--accent-secondary);
+}
+
+.cert-card h3 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Awards Special Styling */
+.award-card {
+    border-color: rgba(255, 215, 0, 0.15);
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.02) 0%, transparent 100%);
+}
+
+.award-card:hover {
+    border-color: rgba(255, 215, 0, 0.5);
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, transparent 100%);
+}
+
+.award-icon {
+    color: #fbbf24;
+    /* Amber/Gold */
+}
+
+.award-card:hover .award-icon {
+    color: #f59e0b;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
