@@ -18,9 +18,13 @@ const Contact = () => {
                     <a href="tel:7550134246" style={{ color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                         <FaPhone /> +91 7550134246
                     </a>
-                    {/* Add actual links if provided, these are placeholders */}
-                    <a href="#" style={{ color: 'var(--text-secondary)', fontSize: '1.5rem' }}><FaLinkedin /></a>
-                    <a href="#" style={{ color: 'var(--text-secondary)', fontSize: '1.5rem' }}><FaGithub /></a>
+
+                    <a href="https://www.linkedin.com/in/deepthivs" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', fontSize: '1.5rem', transition: 'color 0.3s' }} className="social-icon">
+                        <FaLinkedin />
+                    </a>
+                    <a href="https://github.com/DeepthiVijayakumar" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', fontSize: '1.5rem', transition: 'color 0.3s' }} className="social-icon">
+                        <FaGithub />
+                    </a>
                 </div>
             </div>
         </section>

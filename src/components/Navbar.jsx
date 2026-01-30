@@ -46,7 +46,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                     ))}
-                    <a href="/resume.txt" download className="btn-small">Resume</a>
+                    <a href="/resume.pdf" download="Deepthi_VS_Resume.pdf" className="btn-small">Resume</a>
                 </ul>
 
                 {/* Mobile Toggle */}
@@ -76,7 +76,7 @@ const Navbar = () => {
                                     {link.name}
                                 </Link>
                             ))}
-                            <a href="/resume.txt" download className="mobile-link highlight">Download Resume</a>
+                            <a href="/resume.pdf" download="Deepthi_VS_Resume.pdf" className="mobile-link highlight">Download Resume</a>
                         </motion.div>
                     )}
                 </AnimatePresence>
